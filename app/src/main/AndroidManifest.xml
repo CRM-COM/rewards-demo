@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.blinkreceipt.rewards">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name="com.blinkreceipt.rewards.ui.MainActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.microblink.LicenseKey"
+            android:value="sRwAAAALY29tLnJld2FyZHM62x7khJyaPFO1ebHvIZNJq9N4oPVDAVcI9570nfm0sSSsr4YZxvdOTYWB+By4CblUtN3JxIneGDyz9fSdoaG+IO1VQvN4MhUtKjE/jVoqPHxWVZHFcoFaV4p6ehFr8w2Q2vpmVoqXtqe2YGj2B9eS6RG2lI8F7ByqiZwrYMBCOae++/wL1A==" />
+
+    </application>
+
+</manifest>
